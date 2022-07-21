@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border-radius: 10px;
+            margin: 20px;
+            animation: move 2s ease 2s both;
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: none : 기존 위치에서 -> 애니메이션 시작위치->애니메이션 동작-> 기존 위치 종료
+                                    forwards : 기존 위치에서 -> 애니메이션 시작위치->애니메이션 동작-> 애니메이션 종료위치에서 종료
+                                    backward : 애니메이션 시작위치 -> 동작 후 -> 원래위치 종료
+                                    both : 원래위치 무시 -> 애니메이션 시작부터 애니메이션 끝 */
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(100px, 100px);
+                background: dodgerblue;
+            }
+            100% {
+                transform: translate(300px, 100px);
+                background: yellowgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

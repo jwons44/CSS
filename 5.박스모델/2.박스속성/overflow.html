@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 300px;
+            height: 250px;
+            border: 4px solid #001;
+            /*overflow: visible; 기본값 */
+            overflow: auto;
+
+        }
+
+        .child {
+            width: auto;
+            height: auto;
+            background: green;
+            border: 4px solid orange;
+            font-size: 40px;
+
+        }
+
+        .tx1 {
+            border: 1px solid #777;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">overflow흘러넘치는것 가리기 overflow:hide</div>
+        <div class="child">overflow:scroll은 안넘쳐흘러도 계속 있음</div>
+    </div>
+    <hr>
+    <p class="tx1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros eget suscipit rutrum. Proin sodales
+        tortor augue, a sodales velit dignissim a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean
+        mauris eros, elementum sit amet suscipit ac, condimentum ac tellus. Sed a diam urna. Ut a ligula vitae magna
+        mollis volutpat. Phasellus vitae scelerisque nulla. Nulla risus odio, posuere eget dictum in, fermentum in urna.
+
+        Nulla nec purus mollis, tristique dui sed, sodales purus. Curabitur in odio eu libero dignissim consequat vel et
+        nunc. Etiam a quam egestas, gravida arcu sed, volutpat nibh. Praesent aliquam dolor eu arcu commodo lacinia.
+        Aenean ultrices faucibus odio, sit amet aliquet nisl porttitor ullamcorper. In vehicula tortor placerat augue
+        malesuada, efficitur placerat lacus lobortis. In vitae rutrum sapien, efficitur convallis leo. Etiam vitae
+        mauris ut nisl consequat placerat. In at justo a sem euismod auctor. Sed facilisis faucibus bibendum. Vestibulum
+        ornare felis turpis, in fermentum augue tincidunt id. Nam dignissim orci a neque efficitur sollicitudin vel quis
+        nisl. Phasellus justo enim, pellentesque vel risus fermentum, feugiat mollis enim. Curabitur accumsan tincidunt
+        placerat.
+
+        Generated 2 paragraphs, 182 words, 1231 bytes of Lorem Ipsum
+    </p>
+</body>
+
+</html>

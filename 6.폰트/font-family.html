@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+        @font-face {
+            font-family: 'CookieRun';
+            src: url(./fonts/CookieRun\ Regular.ttf);
+        }
+        div {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .font1 {
+            font-family: serif;
+        }
+
+        .font2 {
+            font-family: sans-serif;
+        }
+
+        .font3 {
+            font-family: monospace;
+        }
+
+        .font4 {
+            font-family: cursive;
+        }
+
+        .font5 {
+            font-family: fantasy;
+        }
+
+        .font6 {
+            font-family: 'Gaegu', cursive;
+        }
+
+        .font7 {
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+        .font8{
+            /* 
+            font-style: oblique;
+            font-weight:bold;
+            font-size: 40px;
+            line-height: 1.4em; 
+            font-family: 'CookieRun',cursive,sans-serif;*/
+
+            /*font 단축속성: 사용 시 size와 family는 필수로 지정
+            style,weight,size,/line-height,family*/
+
+            font: oblique bold 30px / 1.4 'CookieRun', cursive;
+        }/*'Gaegu', cursive 서제 적용시 두개이상적용
+            적용 안될 시에 대체 문자적용*/
+    </style>
+</head>
+
+<body>
+    <div class="font1">serif:바탕체 계열</div>
+    <div class="font2">sans-serif:산세리프체/고딕체 계열</div>
+    <div class="font3">monospace:모노스페이스 계열/가로폭이 동등한 글꼴 계열</div>
+    <div class="font4">cursive:필기체 계열/궁서체</div>
+    <div class="font5">fantasy:화려한 계열</div>
+    <div class="font6">fantasy: 구글무료 폰트 'Gaegu', cursive;</div>
+    <div class="font7">'Nanum Gothic Coding', monospace;</div>
+    <div class="font8">쿠키런체</div>
+
+</body>
+
+</html>

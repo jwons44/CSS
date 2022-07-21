@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--padding:내부/경계선과 안에 컨텐츠와의 거리/padding을 주면 박스가 커진다-->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 10px solid #000;
+            padding: 30px;
+            /*박스크기 유지하면서 padding주는법
+            박스 사이즈 지정->border-box 테두리(경계선)을 기준으로 크기를 변경,
+            content-box(default) 내부요소를 기준으로 크기변경 
+            */
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">Hello World</div>
+</body>
+</html>

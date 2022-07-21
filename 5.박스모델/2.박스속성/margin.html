@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*margin:요소와 요소사이의 거리,바깥쪽 거리*/
+        .container{
+            width: 400px;
+            height: 200px;
+            border: 4px solid salmon;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 4px solid darkblue;
+            margin-top: 20px;
+            margin-left: 50%;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 4px solid #000;
+
+        }
+
+
+        .outer{
+            background: orange;
+            height: 100px;
+        }
+        .inner{
+            width: 70%;
+            height: 100px;
+            background: green;
+            /*margin:위아래 좌우/top,bottom,left,right선택가능*/            
+            /*단축 속성 사용 시
+            margin:값4개 위 오른쪽 아래 왼쪽 순서
+            margin:값3개 위 좌우 아래
+            margin:값2개 상하 좌우
+            margin:값1개 상하좌우*/
+            margin: 0 auto;
+            /*0 auto 자동계산해서 가운데정렬/자주사용!*/
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+</body>
+</html>

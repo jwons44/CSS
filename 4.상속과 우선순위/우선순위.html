@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ /*태그선택자 1점*/
+            color: green !important; /*!important 최우선/최후의 수단으로 사용*/
+        }
+        .c-red{/*클래스선택자 10점*/
+            color: red;
+        }
+        #i-yellow{/*아디선택자 100점*/
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body><!--인라인스타일 1000점-->
+    <div id="i-yellow" class="c-red" style="color: orange;">Hello</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        body{
+            background:url(./images/bg.png);
+        }
+        .logo{
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        nav{
+            background: black;
+            text-align: center;
+            font-weight: bold;
+           
+            
+        }
+        .menu li{
+            display: inline-block;
+            margin: 20px;
+        }
+        .menu li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 24px;
+            
+        }
+        .slider{
+            background: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .slider ul li{
+            display: inline-block;
+
+        }
+        section{
+            position: relative;
+        }
+        section .content{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .left{
+            position: absolute;
+            top: 0px;
+            left: 240px;
+        }
+        .right{
+            position: absolute;
+            top: 0;
+            right: 240px;
+        }
+        .clearfixed::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .top{
+            position: fixed;
+            top: 0;
+            right: 10px;
+            background: red;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .top a{
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="로고">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="">메뉴 1</a></li>
+                <li><a href="">메뉴 2</a></li>
+                <li><a href="">메뉴 3</a></li>
+                <li><a href="">메뉴 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="slider">
+        <ul class="">
+            <li><img src="./images/item01.png" alt=""><br>iPone</li>
+            <li><img src="./images/item02.png" alt=""><br>ipod</li>
+            <li><img src="./images/item03.png" alt=""><br>iPad</li>
+            <li><img src="./images/item04.png" alt=""><br>iMac</li>
+            
+        </ul>
+    </article>
+    <section>
+        <div class="content">
+            <img src="./images/ipad.jpg" alt="">
+        </div>
+        <aside class="left">
+            <img src="./images/side01.png" alt="">
+            <br><br>
+            <img src="./images/side02.png" alt="">
+        </aside>
+        <aside class="right">
+            <img src="./images/side03.png" alt="">
+            <br><br>
+            <img src="./images/side04.png" alt="">
+        </aside>
+    </section>
+    <div class="top">
+        <a href="#">TOP</a> 
+    </div>
+</body>
+
+
+
+</html>

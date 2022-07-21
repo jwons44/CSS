@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--상속가능:font,color 등등-->
+    <style>
+        .eco{ /*부모설정을 기본*/
+            color: aqua;
+            font-size: 30px;
+        }
+        .eco .plant{ /*상속을 통해 부모설정을 물려받고 추가 설정변경*/
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="eco">
+        <div class="animal">동물</div>
+        <div class="plant">식물
+            <div>해바라기</div>
+            <div>튤립</div>
+            <div>소나무</div>
+        </div>
+    </div>
+</body>
+</html>

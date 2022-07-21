@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            padding: 20px;
+            border: 2px solid salmon;
+            /*overflow:hidden; 자식의 float해제 시키는 방법(1) 지양*/
+        }
+        .box{
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background-color: orange;
+            font-size: 50px;
+            float: left;
+            
+        }
+        /* 자식의 float해제 시키는 방법(2) 
+          .clearfix::after:가상의 요소 추가
+            부모 클래스에 클래스 추가*/
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+            /*위 코드 이름과 코드 내용 그대로를 자주 사용*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>
